@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lon.uesrmanagerment.mapper.BillMapper">
+
+    <resultMap id="BaseResultMap" type="com.lon.uesrmanagerment.model.domain.Bill">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="useraccount" column="userAccount" jdbcType="VARCHAR"/>
+            <result property="carname" column="carName" jdbcType="VARCHAR"/>
+            <result property="amount" column="amount" jdbcType="INTEGER"/>
+            <result property="day" column="day" jdbcType="INTEGER"/>
+            <result property="amountprice" column="amountPrice" jdbcType="INTEGER"/>
+            <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,userAccount,carName,
+        amount,day,amountPrice，createTime
+    </sql>
+</mapper>

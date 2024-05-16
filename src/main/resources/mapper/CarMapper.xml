@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lon.uesrmanagerment.mapper.CarMapper">
+
+    <resultMap id="BaseResultMap" type="com.lon.uesrmanagerment.model.domain.Car">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="carname" column="carName" jdbcType="VARCHAR"/>
+            <result property="price" column="price" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,carName,price
+    </sql>
+</mapper>

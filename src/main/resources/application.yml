@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: user-center
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://localhost:3306/usermanagement?serverTimezone=GMT%2B8&characterEncoding=utf-8&&userSSL=false
+    username: root
+    password: 067688qazw
+  session:
+    timeout: 86400
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+  global-config:
+    db-config:
+      logic-delete-field: isDelete
+      logic-not-delete-value: 0
+      logic-delete-value: 1
